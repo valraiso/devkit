@@ -1,9 +1,0 @@
-[0m[[0mdebug[0m] [0mOther repositories:[0m
-[0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0m	Raw(ProjectResolver(inter-project, mapped: ))[0m
-[0m[[0mdebug[0m] [0m	URLRepository(typesafe-ivy-releases,sbt.Patterns@67126e8e)[0m
-[0m[[0mdebug[0m] [0m	URLRepository(sbt-plugin-releases,sbt.Patterns@6b18617f)[0m
-[0m[[0mdebug[0m] [0m	FileRepository(local,FileConfiguration(true,None),sbt.Patterns@da90fc7)[0m
-[0m[[0mdebug[0m] [0m	Typesafe repository: http://repo.typesafe.com/typesafe/releases/[0m
-[0m[[0mdebug[0m] [0m	public: http://repo1.maven.org/maven2/[0m
-[0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
