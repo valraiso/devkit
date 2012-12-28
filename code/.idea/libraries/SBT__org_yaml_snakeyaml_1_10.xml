@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="SBT: org.yaml:snakeyaml:1.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.yaml/snakeyaml/jars/snakeyaml-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.yaml/snakeyaml/docs/snakeyaml-1.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.yaml/snakeyaml/srcs/snakeyaml-1.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

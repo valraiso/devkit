@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.specs2:specs2_2.10.0-RC1:1.12.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.specs2/specs2_2.10.0-RC1/jars/specs2_2.10.0-RC1-1.12.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.specs2/specs2_2.10.0-RC1/docs/specs2_2.10.0-RC1-1.12.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.specs2/specs2_2.10.0-RC1/srcs/specs2_2.10.0-RC1-1.12.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

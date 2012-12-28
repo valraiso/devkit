@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Scala 2.10.0-RC1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/framework/sbt/boot/scala-2.10.0-RC1/lib/scala-library.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/framework/sbt/boot/scala-2.10.0-RC1/lib/scala-compiler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/framework/sbt/boot/scala-2.10.0-RC1/lib/scala-reflect.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

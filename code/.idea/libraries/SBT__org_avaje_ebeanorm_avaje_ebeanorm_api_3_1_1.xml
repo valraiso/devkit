@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.avaje.ebeanorm:avaje-ebeanorm-api:3.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/jars/avaje-ebeanorm-api-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/docs/avaje-ebeanorm-api-3.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/srcs/avaje-ebeanorm-api-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

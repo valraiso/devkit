@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.fluentlenium:fluentlenium-festassert:0.7.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.fluentlenium/fluentlenium-festassert/jars/fluentlenium-festassert-0.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.fluentlenium/fluentlenium-festassert/docs/fluentlenium-festassert-0.7.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.fluentlenium/fluentlenium-festassert/srcs/fluentlenium-festassert-0.7.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

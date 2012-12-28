@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.webbitserver:webbit:0.4.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.webbitserver/webbit/jars/webbit-0.4.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.webbitserver/webbit/docs/webbit-0.4.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/org.webbitserver/webbit/srcs/webbit-0.4.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

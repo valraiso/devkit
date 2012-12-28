@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../project/target/scala_2.9.2" />
+    <output-test url="file://$MODULE_DIR$/../project/target/scala_2.9.2" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../project">
+      <sourceFolder url="file://$MODULE_DIR$/../project" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../project/project" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../project/boot" />
+      <excludeFolder url="file://$MODULE_DIR$/../project/project/project/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../project/project/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../project/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="sbt-and-plugins">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../project/target/scala-2.9.2/sbt-0.12/classes" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-1.3.0.201202151440-r.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/process-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/asm/asm-commons/jars/asm-commons-3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/commons-io/commons-io/jars/commons-io-2.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/classfile-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.github.scala-incubator.io/scala-io-core_2.9.1/jars/scala-io-core_2.9.1-0.4.0-seq.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/logging-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/commons-codec/commons-codec/jars/commons-codec-1.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/commons-httpclient-3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.google.guava/guava/jars/guava-10.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/collections-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/routes-compiler_2.9.2/2.1-SNAPSHOT/jars/routes-compiler_2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.github.scala-incubator.io/scala-io-file_2.9.2/jars/scala-io-file_2.9.2-0.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/command-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/completion-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/console_2.9.2/2.1-SNAPSHOT/jars/console_2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.clapper/grizzled-slf4j_2.9.1/jars/grizzled-slf4j_2.9.1-0.6.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/play-exceptions/2.1-SNAPSHOT/jars/play-exceptions.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/run-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/jline/jline/jars/jline-0.9.94.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.typesafe.akka/akka-actor/jars/akka-actor-2.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/commons-logging-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/jline-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.github.scala-incubator.io/scala-io-file_2.9.1/jars/scala-io-file_2.9.1-0.4.0-seq.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.h2database/h2/jars/h2-1.3.168.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.pegdown/pegdown/jars/pegdown-1.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/commons-codec-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/me.lessis/ls_2.9.1/jars/ls_2.9.1-0.1.2-RC2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.clapper/classutil_2.9.1/jars/classutil_2.9.1-0.4.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-server/jars/avaje-ebeanorm-server-3.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/io-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/api-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/incremental-compiler-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/asm/asm-util/jars/asm-util-3.3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/rhino/js/jars/js-1.7R2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.databinder/dispatch-core_2.9.1/jars/dispatch-core_2.9.1-0.8.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/task-system-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/lib/jansi.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/tracking-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/compiler-integration-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.databinder.giter8/giter8-lib_2.9.1/jars/giter8-lib_2.9.1-0.5.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/lib/scala-compiler.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.clapper/grizzled-scala_2.9.1/jars/grizzled-scala_2.9.1-1.0.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-2.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/main-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/classpath-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-core/jars/sbteclipse-core-2.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/jsch-0.1.46.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.github.jsuereth.scala-arm/scala-arm_2.9.1/jars/scala-arm_2.9.1-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/actions-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/xsbti/interface-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/compiler-ivy-integration-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/compile-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbtidea/sbt-idea/jars/sbt-idea-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/templates-compiler_2.9.2/2.1-SNAPSHOT/jars/templates-compiler_2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.javassist/javassist/jars/javassist-3.16.1-GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/sbt-link/2.1-SNAPSHOT/jars/sbt-link.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/asm/asm/jars/asm-3.3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.parboiled/parboiled-java/jars/parboiled-java-1.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.google.javascript/closure-compiler/jars/closure-compiler-rr2079.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/junit/junit/jars/junit-3.8.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/test-interface-0.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/lib/scala-library.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.github.scala-incubator.io/scala-io-core_2.9.2/jars/scala-io-core_2.9.2-0.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.contentobjects.jnotify/jnotify/jars/jnotify-0.94.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/local/play/sbt-plugin/scala_2.9.2/sbt_0.12/2.1-SNAPSHOT/jars/sbt-plugin.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/jars/avaje-ebeanorm-api-3.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.jcraft/jsch/jars/jsch-0.1.44-1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/persist-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/test-agent-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/ivy-2.3.0-rc1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/cache-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/testing-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/asm/asm-tree/jars/asm-tree-3.3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/launcher-interface-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/lib/jline.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.databinder/dispatch-futures_2.9.1/jars/dispatch-futures_2.9.1-0.8.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/ivy-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/sbinary_2.9.0-0.4.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.databinder/dispatch-http_2.9.1/jars/dispatch-http_2.9.1-0.8.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/net.databinder.giter8/giter8_2.9.1/jars/giter8_2.9.1-0.5.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/antlr/antlr/jars/antlr-2.7.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/asm/asm-analysis/jars/asm-analysis-3.3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.antlr/stringtemplate/jars/stringtemplate-3.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/com.typesafe/config/bundles/config-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.scalaz/scalaz-core_2.9.2/jars/scalaz-core_2.9.2-6.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/repository/cache/org.clapper/scalasti_2.9.1/jars/scalasti_2.9.1-0.5.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/tasks-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/control-0.12.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../clones/Play20/framework/sbt/boot/scala-2.9.2/org.scala-sbt/sbt/0.12.1/sbt-0.12.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="scala-2.9.2" level="project" />
+  </component>
+</module>
+

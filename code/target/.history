@@ -1,0 +1,10 @@
+idea with-sources=yes
+compile
+reload
+compile
+publish
+exit
+compile
+publish
+reload
+exit

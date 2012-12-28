@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: net.sourceforge.cssparser:cssparser:0.9.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/cache/net.sourceforge.cssparser/cssparser/srcs/cssparser-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

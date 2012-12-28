@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: play:sbt-link:2.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/local/play/sbt-link/2.1-SNAPSHOT/jars/sbt-link.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../clones/Play20/repository/local/play/sbt-link/2.1-SNAPSHOT/srcs/sbt-link-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
