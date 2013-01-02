@@ -1,0 +1,37 @@
+@(elements: views.html.helper.FieldElements)
+
+@import play.api.i18n._
+
+@**************************************************
+* Generate input according twitter bootsrap rules *
+**************************************************@
+
+<div class="control-group margin-bottom-0 @elements.args.get('_class) @if(elements.hasErrors) {error}" id="@elements.args.get('_id).getOrElse(elements.id + "_field")">
+    <label for="@elements.id" class="control-label">@elements.label(elements.lang)</label>
+    <div class="controls">
+		
+		@if(elements.args.get('_prepend)) {
+			<div class="input-prepend">
+              <span class="add-on">@elements.args.get('_prepend).getOrElse("")</span>@Html(elements.input.toString().trim())
+            </div>
+		} else {
+			@if(elements.args.get('_append)){
+				<div class="input-append">
+	              @Html(elements.input.toString().trim())<span class="add-on">@elements.args.get('_append).getOrElse("")</span>
+	            </div>
+			} else {
+				@elements.input
+			}
+		}
+
+        @if(!elements.errors.isEmpty) {
+        <span class="help-inline">@elements.errors(elements.lang).mkString(", ")</span>
+        }
+        @if(elements.args.get('_help)) {
+        <p class="help-block">@elements.args.get('_help)</p>
+        }
+    </div>
+</div>
+@if(elements.args.get('_hr).getOrElse("true").equals("true")){
+	<hr class="margin-5px-0"/>
+}
