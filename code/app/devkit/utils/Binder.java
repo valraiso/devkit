@@ -65,8 +65,7 @@ public class Binder {
 			bindValues.add(bind(stringValues[i], clazz, options));
 		}
 		
-		T[] array = (T[]) bindValues.toArray();
-		return array;
+		return (T[]) bindValues.toArray((T[]) java.lang.reflect.Array.newInstance(clazz, 0));
 	}
 	
 	public static Integer asInteger(String stringValue, int radix){
