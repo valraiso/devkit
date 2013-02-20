@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import play.api.templates.Html;
 import play.libs.F.Option;
 import play.mvc.Http.MultipartFormData;
 import play.mvc.Http.MultipartFormData.FilePart;
@@ -125,4 +126,10 @@ public class Controller extends play.mvc.Controller{
 		}
 		return None();
 	}
+
+    public static Html trim(Html html){
+        return new play.api.templates.Html(
+            new scala.collection.mutable.StringBuilder(html.body().replaceAll("^\\r?\\n?", ""))
+        );
+    }
 }
