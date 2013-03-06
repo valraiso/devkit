@@ -108,7 +108,8 @@ public class Controller extends play.mvc.Controller{
                 } else {
                     params = request().body().asFormUrlEncoded();
                 }
-            } else {
+            }
+            if (params == null){
                 params = new HashMap<String, String[]>();
             }
             ctx().args.put(HTTP_PARAMS_KEY, params);
