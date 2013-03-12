@@ -19,13 +19,17 @@ public class Controller extends play.mvc.Controller{
 
     private static final String HTTP_PARAMS_KEY = "http.params";
 
-	public static String param (String key){
+    public static String param (String key){
 
-		return param (key, String.class);
-	}
-	
-	@SuppressWarnings("unchecked")
-	public static <T> T param (String key, Class<T> clazz){
+        return param (key, String.class);
+    }
+
+    public static <T> T param (String key, Class<T> clazz){
+        return param(key, clazz, null);
+    }
+
+    @SuppressWarnings("unchecked")
+    public static <T> T param (String key, Class<T> clazz, T defVal){
 
         if ("multipart/form-data".equals(request().getHeader("CONTENT-TYPE"))){
 
@@ -42,19 +46,19 @@ public class Controller extends play.mvc.Controller{
                 ).getOrElse(null);
             }
         }
-		
-		return param (getParams(), key, clazz);
-	}
-	
-	@SuppressWarnings("unchecked")
-	public static <T> T[] params(String key, Class<T> clazz){
+
+        return param (getParams(), key, clazz, defVal);
+    }
+
+    @SuppressWarnings("unchecked")
+    public static <T> T[] params(String key, Class<T> clazz){
 
         if ("multipart/form-data".equals(request().getHeader("CONTENT-TYPE"))){
 
             MultipartFormData multipartFormData = request().body().asMultipartFormData();
 
             if (FilePart.class.equals(clazz) ||
-                    File.class.equals(clazz)){
+                File.class.equals(clazz)){
 
                 List<Object> parts = new ArrayList<Object>();
                 for (FilePart filePart : multipartFormData.getFiles()){
@@ -65,32 +69,38 @@ public class Controller extends play.mvc.Controller{
                 return (T[]) parts.toArray();
             }
         }
-		
-		return params(getParams(), key, clazz);
-	}
-	
-	public static <T> T param (Map<String,String[]> params, String key, Class<T> clazz){
-		
-		String[] values = params.get(key);
-		if (values != null && values.length > 0){
 
-			String stringValue = values[0];
-			return Binder.bind(stringValue, clazz);
-		}
-		
-		return null;
-	}
-	
-	public static <T> T[] params(Map<String,String[]> params, String key, Class<T> clazz){
-		
-		String[] values = params.get(key);
-		if (values != null && values.length > 0){
+        return params(getParams(), key, clazz);
+    }
 
-			return Binder.bind(values, clazz);
-		}
-		
-		return null;
-	}
+    public static <T> T param (Map<String,String[]> params, String key, Class<T> clazz){
+        return param(params, key , clazz, null);
+    }
+
+    public static <T> T param (Map<String,String[]> params, String key, Class<T> clazz, T defVal){
+
+        String[] values = params.get(key);
+        if (values != null && values.length > 0){
+
+            String stringValue = values[0];
+            T val = Binder.bind(stringValue, clazz);
+            if( val != null){
+                return val;
+            }
+        }
+        return defVal;
+    }
+
+    public static <T> T[] params(Map<String,String[]> params, String key, Class<T> clazz){
+
+        String[] values = params.get(key);
+        if (values != null && values.length > 0){
+
+            return Binder.bind(values, clazz);
+        }
+
+        return null;
+    }
 
     private static Map<String,String[]> getParams(){
 
@@ -117,13 +127,13 @@ public class Controller extends play.mvc.Controller{
         return params;
     }
 
-	public static <T> Option<T> Option(T value){
+    public static <T> Option<T> Option(T value){
 
-		if (value != null){
-			return Some(value);
-		}
-		return None();
-	}
+        if (value != null){
+            return Some(value);
+        }
+        return None();
+    }
 
     public static Html trim(Html html){
         return new play.api.templates.Html(
