@@ -20,7 +20,15 @@ public class Binder {
 	@SuppressWarnings("unchecked")
 	public static <T> T bind (String stringValue, Class<T> clazz, String options){
 
-		if (String.class.equals(clazz)){
+        if (clazz.isEnum()){
+            Object[] values = clazz.getEnumConstants();
+            for (Object o : values){
+                if (stringValue.toString().equals(o)){
+                    return (T) o;
+                }
+            }
+        }
+		else if (String.class.equals(clazz)){
 
 			return (T) stringValue;
 		}
