@@ -31,7 +31,7 @@ public class Controller extends play.mvc.Controller{
     @SuppressWarnings("unchecked")
     public static <T> T param (String key, Class<T> clazz, T defVal){
 
-        if ("multipart/form-data".equals(request().getHeader("CONTENT-TYPE"))){
+        if (File.class.equals(clazz)){
 
             MultipartFormData multipartFormData = request().body().asMultipartFormData();
 
@@ -53,7 +53,7 @@ public class Controller extends play.mvc.Controller{
     @SuppressWarnings("unchecked")
     public static <T> T[] params(String key, Class<T> clazz){
 
-        if ("multipart/form-data".equals(request().getHeader("CONTENT-TYPE"))){
+        if (File.class.equals(clazz)){
 
             MultipartFormData multipartFormData = request().body().asMultipartFormData();
 
@@ -112,8 +112,8 @@ public class Controller extends play.mvc.Controller{
             if ("GET".equals(method)){
                 params = request().queryString();
             } else if ("POST".equals(method)){
-                if ("multipart/form-data".equals(request().getHeader("CONTENT-TYPE"))){
-                    MultipartFormData multipartFormData = request().body().asMultipartFormData();
+                MultipartFormData multipartFormData = request().body().asMultipartFormData();
+                if(multipartFormData != null) {
                     params = multipartFormData.asFormUrlEncoded();
                 } else {
                     params = request().body().asFormUrlEncoded();

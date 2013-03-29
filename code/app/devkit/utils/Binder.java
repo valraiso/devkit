@@ -23,7 +23,7 @@ public class Binder {
         if (clazz.isEnum()){
             Object[] values = clazz.getEnumConstants();
             for (Object o : values){
-                if (stringValue.toString().equals(o)){
+                if (o.toString().equals(stringValue)){
                     return (T) o;
                 }
             }
