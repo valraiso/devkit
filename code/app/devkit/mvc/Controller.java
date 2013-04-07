@@ -31,20 +31,17 @@ public class Controller extends play.mvc.Controller{
     @SuppressWarnings("unchecked")
     public static <T> T param (String key, Class<T> clazz, T defVal){
 
-        if (File.class.equals(clazz)){
-
+        if (File.class.equals(clazz) || FilePart.class.equals(clazz)){
             MultipartFormData multipartFormData = request().body().asMultipartFormData();
-
-            if (FilePart.class.equals(clazz)){
-
-                return (T) multipartFormData.getFile(key);
-
-            } else if (File.class.equals(clazz)){
-
-                return (T) Option(
-                    multipartFormData.getFile(key)
-                ).getOrElse(null);
+            if (multipartFormData != null){
+                FilePart filePart = multipartFormData.getFile(key);
+                if (FilePart.class.equals(clazz)){
+                    return (T) filePart;
+                } else if (filePart != null){
+                    return (T) filePart.getFile();
+                }
             }
+            return null;
         }
 
         return param (getParams(), key, clazz, defVal);
@@ -53,21 +50,30 @@ public class Controller extends play.mvc.Controller{
     @SuppressWarnings("unchecked")
     public static <T> T[] params(String key, Class<T> clazz){
 
-        if (File.class.equals(clazz)){
-
+        if (File.class.equals(clazz) || FilePart.class.equals(clazz)){
             MultipartFormData multipartFormData = request().body().asMultipartFormData();
+            if (multipartFormData != null){
 
-            if (FilePart.class.equals(clazz) ||
-                File.class.equals(clazz)){
-
-                List<Object> parts = new ArrayList<Object>();
-                for (FilePart filePart : multipartFormData.getFiles()){
-                    if (key.equals(filePart.getKey())){
-                        parts.add(FilePart.class.equals(clazz) ? filePart : filePart.getFile());
+                if (FilePart.class.equals(clazz)){
+                    List<FilePart> parts = new ArrayList<FilePart>();
+                    for (FilePart filePart : multipartFormData.getFiles()){
+                        if (key.equals(filePart.getKey())){
+                            parts.add(filePart);
+                        }
                     }
+                    return (T[]) parts.toArray();
                 }
-                return (T[]) parts.toArray();
+                if (File.class.equals(clazz)){
+                    List<File> parts = new ArrayList<File>();
+                    for (FilePart filePart : multipartFormData.getFiles()){
+                        if (key.equals(filePart.getKey())){
+                            parts.add(filePart.getFile());
+                        }
+                    }
+                    return (T[]) parts.toArray();
+                }
             }
+            return null;
         }
 
         return params(getParams(), key, clazz);
