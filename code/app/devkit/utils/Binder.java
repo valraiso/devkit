@@ -8,6 +8,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import play.mvc.Http;
 
 public class Binder {
@@ -146,4 +149,14 @@ public class Binder {
 		
         return date;
 	}
+
+    public static DateTime asDateTime(String stringValue, String pattern){
+        return asDateTime(
+            stringValue, DateTimeFormat.forPattern(pattern)
+        );
+    }
+
+    public static DateTime asDateTime(String stringValue, DateTimeFormatter formatter){
+        return formatter.parseDateTime(stringValue);
+    }
 }
