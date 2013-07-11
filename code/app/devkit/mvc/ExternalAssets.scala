@@ -36,7 +36,7 @@ import scala.util.control.NonFatal
  * }}}
  *
  */
-object ExternalAssets extends Controller {
+object ExternalAssets extends play.api.mvc.Controller {
 
   private val timeZoneCode = "GMT"
 
