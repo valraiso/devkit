@@ -157,6 +157,9 @@ public class Binder {
     }
 
     public static DateTime asDateTime(String stringValue, DateTimeFormatter formatter){
+        if (stringValue == null){
+            return null;
+        }
         return formatter.parseDateTime(stringValue);
     }
 }
