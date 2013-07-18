@@ -12,8 +12,8 @@ object ApplicationBuild extends Build {
     javaCore
   )
 
-  val valraisoReleases   = Resolver.file("file", new File(Path.userHome.absolutePath+"/dev/apps/valraiso.github.com/releases/"))
-  val valraisoSnapshots  = Resolver.file("file", new File(Path.userHome.absolutePath+"/dev/apps/valraiso.github.com/snapshot/"))
+  val valraisoReleases   = Resolver.file("file", new File("../../valraiso.github.com/releases/"))
+  val valraisoSnapshots  = Resolver.file("file", new File("../../valraiso.github.com/snapshot/"))
   val valraisoRepository = if(appVersion.endsWith("SNAPSHOT")) valraisoSnapshots else valraisoReleases
 
 
