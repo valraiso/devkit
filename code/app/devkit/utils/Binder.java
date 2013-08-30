@@ -2,6 +2,8 @@ package devkit.utils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -117,15 +119,49 @@ public class Binder {
 	}
 
 	public static BigDecimal asBigDecimal(String stringValue, int scale, RoundingMode roundingMode){
-		
+
 		BigDecimal value = asBigDecimal(stringValue);
 		try {
 			value = value.setScale(scale, roundingMode);
 		} catch (Exception e) {}
 		return value;
 	}
-	
-	public static Boolean asBoolean(String stringValue){
+
+	public static BigDecimal asBigDecimal(String stringValue, Locale locale){
+        try{
+            DecimalFormat format = (DecimalFormat) NumberFormat.getInstance(locale);
+            format.setParseBigDecimal(true);
+            return (BigDecimal) format.parseObject(stringValue);
+        }catch(Exception e){
+            return null;
+        }
+    }
+
+    public static BigDecimal asBigDecimal(String stringValue, Locale locale, int scale){
+        try{
+            DecimalFormat format = (DecimalFormat) NumberFormat.getInstance(locale);
+            format.setParseBigDecimal(true);
+            BigDecimal value = (BigDecimal) format.parseObject(stringValue);
+            return value.setScale(scale);
+        }catch(Exception e){
+            return null;
+        }
+    }
+
+    public static BigDecimal asBigDecimal(String stringValue, Locale locale, int scale, RoundingMode roundingMode){
+        try{
+            DecimalFormat format = (DecimalFormat) NumberFormat.getInstance(locale);
+            format.setParseBigDecimal(true);
+            BigDecimal value = (BigDecimal) format.parseObject(stringValue);
+            return value.setScale(scale, roundingMode);
+        }catch(Exception e){
+            return null;
+        }
+    }
+
+
+
+    public static Boolean asBoolean(String stringValue){
 		
 		Boolean value = null;
 		try {
